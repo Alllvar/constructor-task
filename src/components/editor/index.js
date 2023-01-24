@@ -6,6 +6,7 @@ import {
 import { getBlockIds, getBlockData, getSelectedId } from '../../store/selectors';
 import { LABELS, TYPE_COLORS, TYPE_DEFAULT_VALUES } from '../../constants/types';
 import ActionPanel from './action-panel';
+import './index.css';
 
 function Editor() {
   const dispatch = useDispatch();

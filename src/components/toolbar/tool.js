@@ -22,8 +22,8 @@ function Tool({ type, onStart, onAddBlock }) {
       }}
     >
       <pre>
-        Add
-        {' '}
+        {/*Add*/}
+        {/*{' '}*/}
         {LABELS[type]}
       </pre>
       <br />

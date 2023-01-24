@@ -3,6 +3,7 @@ import { addBlock } from '../../store/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSelectedId } from '../../store/selectors';
 import Tool from './tool';
+import './index.css';
 
 const TYPES_LIST = Object.values(TYPES);
 

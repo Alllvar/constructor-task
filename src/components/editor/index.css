@@ -1,0 +1,41 @@
+.editor {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 140px);
+    background: #F5F5FC;
+    padding: 25px;
+    border-left: 1px solid #E4E6F1;
+    border-right: 1px solid #E4E6F1;
+}
+
+.editor > div {
+    height: 130px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    width: auto;
+}
+
+.editor > div sup {
+    color: darkslategray;
+}
+
+.editor > div textarea {
+    resize: none;
+    margin: 10px 0;
+    width: 100%;
+    z-index: 3;
+    color: black;
+    background-color: white;
+}
+
+.editor > div textarea:read-only {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    outline: 0;
+}
+
+.editor > div:hover {
+    cursor: pointer;
+}

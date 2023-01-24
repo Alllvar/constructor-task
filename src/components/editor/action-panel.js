@@ -21,6 +21,9 @@ function ActionPanel({
       style={{
         position: 'relative',
         height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
       }}
       onClick={(e) => {
         e.stopPropagation();
