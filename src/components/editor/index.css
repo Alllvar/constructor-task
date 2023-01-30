@@ -13,10 +13,22 @@
     padding: 5px 10px;
     margin: 5px 10px;
     width: auto;
+    border: none;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*padding: 15px 10px;*/
+    /*width: 478px;*/
+    /*height: 83px;*/
+    /*background: #FFFFFF;*/
+    border-radius: 6px;
+
+
 }
 
 .editor > div sup {
     color: darkslategray;
+    text-align: center;
 }
 
 .editor > div textarea {

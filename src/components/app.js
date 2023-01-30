@@ -5,9 +5,14 @@ import Viewer from './viewer';
 function App() {
   return (
     <div className="app">
-      <Toolbar />
-      <Editor />
-      <Viewer />
+      <header>
+        REACT EDITOR
+      </header>
+      <div className="container">
+        <Toolbar />
+        <Editor />
+        <Viewer />
+      </div>
     </div>
   );
 }

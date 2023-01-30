@@ -92,7 +92,7 @@ function Editor() {
               style={{
                 ...(selectedId && selectedId === id ? { filter: 'blur(0)' } : {}),
                 ...(selectedId && selectedId !== id ? { filter: 'blur(1rem)' } : {}),
-                backgroundColor: TYPE_COLORS[type],
+                // backgroundColor: TYPE_COLORS[type],
               }}
             >
               <sup>{LABELS[type]}</sup>

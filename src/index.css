@@ -1,20 +1,28 @@
 .app {
     display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    text-align: center;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #252A32;
+    border-bottom: 1px solid #E4E6F1;
+    padding: 21px 0;
+}
+
+.container {
+    display: flex;
     flex-direction: row;
     align-items: initial;
-    min-height: 100vh;
-
 }
 
-.viewer {
-    display: flex;
-    flex-direction: column;
-    width: calc(50% - 140px);
-}
 
-.viewer > div {
-    padding: 5px 10px;
-    margin: 5px 10px;
-    width: auto;
-}
 

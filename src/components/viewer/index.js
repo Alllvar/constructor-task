@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { COMPONENT_TYPES_MAP } from './constants';
 import { getBlockData, getBlockIds, getSelectedId } from '../../store/selectors';
 import { TYPE_COLORS } from '../../constants/types';
+import './index.css'
 
 function Viewer() {
   const blockIds = useSelector(getBlockIds);
@@ -21,11 +22,11 @@ function Viewer() {
         blockIds.map((id) => {
           const { content, type } = data[id];
           const Component = COMPONENT_TYPES_MAP[type];
-
+          console.log(type, 'type')
           return (
             <div
               key={id}
-              style={getStyles({ id, type })}
+              // style={getStyles({ id, type })}
             >
               <Component content={content} />
             </div>

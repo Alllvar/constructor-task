@@ -1,3 +1,5 @@
+import defaultImg from '../assets/images/defaultImg.png'
+
 export const TYPES = {
   IMAGE: 'image',
   TITLE: 'title',
@@ -15,7 +17,8 @@ export const LABELS = {
 export const TYPE_DEFAULT_VALUES = {
   [TYPES.TITLE]: 'Page title',
   [TYPES.PARAGRAPH]: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
-  [TYPES.IMAGE]: 'https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg',
+  // [TYPES.IMAGE]: 'https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg',
+  [TYPES.IMAGE]: defaultImg,
   [TYPES.BUTTON]: 'Press',
 };
 
