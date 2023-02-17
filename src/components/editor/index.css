@@ -43,3 +43,21 @@
 .editor > div:hover {
     cursor: pointer;
 }
+
+.arrow-buttons-container {
+    position: absolute;
+    bottom: 50px;
+}
+
+.up-button {
+    color: #4CAF50;
+}
+
+.down-button {
+    color: #4CAF50;
+}
+
+.option-buttons-container {
+    position: absolute;
+    bottom: 50px;
+}

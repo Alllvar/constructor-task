@@ -53,10 +53,22 @@ function ActionPanel({
             >
               {isEditable ? 'save' : 'edit'}
             </button>
-            <button onClick={onRemove} disabled={isEditable}>remove</button>
-            <button onClick={onMoveUp} disabled={isEditable || isFirst}>up</button>
-            <button onClick={onMoveDown} disabled={isEditable || isLast}>down</button>
-            <button onClick={onCopy} disabled={isEditable}>copy</button>
+            <div className="arrow-buttons-container">
+              <button
+                  className="up-button"
+                  onClick={onMoveUp}
+                  disabled={isEditable || isFirst}
+              >up</button>
+              <button
+                  className="down-button"
+                  onClick={onMoveDown}
+                  disabled={isEditable || isLast}
+              >down</button>
+            </div>
+            <div className="option-buttons-container">
+              <button onClick={onCopy} disabled={isEditable}>copy</button>
+              <button onClick={onRemove} disabled={isEditable}>remove</button>
+            </div>
             <button
               onClick={(event) => {
                 event.stopPropagation();
